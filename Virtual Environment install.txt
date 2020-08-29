@@ -1,0 +1,130 @@
+Python\Tutorial\Virtual Environment> pip install virtualenv
+Collecting virtualenv
+  Downloading virtualenv-20.0.31-py2.py3-none-any.whl (4.9 MB)
+     |████████████████████████████████| 4.9 MB 182 kB/s
+Collecting distlib<1,>=0.3.1
+  Downloading distlib-0.3.1-py2.py3-none-any.whl (335 kB)
+     |████████████████████████████████| 335 kB 242 kB/s
+Collecting six<2,>=1.9.0
+  Downloading six-1.15.0-py2.py3-none-any.whl (10 kB)
+Collecting appdirs<2,>=1.4.3
+  Downloading appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Collecting importlib-metadata<2,>=0.12; python_version < "3.8"
+  Downloading importlib_metadata-1.7.0-py2.py3-none-any.whl (31 kB)
+Collecting filelock<4,>=3.0.0
+  Downloading filelock-3.0.12-py3-none-any.whl (7.6 kB)
+Collecting zipp>=0.5
+  Downloading zipp-3.1.0-py3-none-any.whl (4.9 kB)
+Installing collected packages: distlib, six, appdirs, zipp, importlib-metadata, filelock, virtualenv
+PS D:\Education\Python\Tutorial\Virtual Environment>
+PS D:\Education\Python\Tutorial\Virtual Environment> .1.0
+PS D:\Education\Python\Tutorial\Virtual Environment> virtualenv avijit
+created virtual environment CPython3.7.0.beta.3-64 in 5016ms
+  creator CPython3Windows(dest=D:\Education\Python\Tutorial\Virtual Environment\avijit, clear=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\Avijit Samanta\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==20.2.2, setuptools==49.6.0, wheel==0.35.1
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+PS D:\Education\Python\Tutorial\Virtual Environment> .\avijit\Scripts\activ
+ate
+.\avijit\Scripts\activate : File D:\Education\Python\Tutorial\Virtual
+Environment\avijit\Scripts\activate.ps1 cannot be loaded because running
+scripts is disabled on this system. For more information, see
+about_Execution_Policies at http://go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ .\avijit\Scripts\activate
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS D:\Education\Python\Tutorial\Virtual Environment> .\avijit\Scripts\activ
+ate
+(avijit) PS D:\Education\Python\Tutorial\Virtual Environment> python
+Python 3.7.0b3 (v3.7.0b3:4e7efa9c6f, Mar 29 2018, 18:42:04) [MSC v.1913 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> deactivate
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'deactivate' is not defined
+>>> exit()
+(avijit) PS D:\Education\Python\Tutorial\Virtual Environment> deactivate
+PS D:\Education\Python\Tutorial\Virtual Environment>
+
+
+
+open it in admin mode
+
+
+
+
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\Windows\system32> e:
+PS E:\> d:
+PS D:\> & '.\Education\Python\Tutorial\Virtual Environment\'
+& : The term '.\Education\Python\Tutorial\Virtual Environment\' is not recognized as the name of a cmdlet, function,
+script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is
+correct and try again.
+At line:1 char:3
++ & '.\Education\Python\Tutorial\Virtual Environment\'
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\Education\Pyt...al Environment\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\> .\Education\Python\Tutorial\Virtual Environment\
+.\Education\Python\Tutorial\Virtual : The term '.\Education\Python\Tutorial\Virtual' is not recognized as the name of
+a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included,
+verify that the path is correct and try again.
+At line:1 char:1
++ .\Education\Python\Tutorial\Virtual Environment\
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\Education\Python\Tutorial\Virtual:String) [], CommandNotFoundExceptio
+   n
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\> .\Education\Python\
+.\Education\Python\ : The term '.\Education\Python\' is not recognized as the name of a cmdlet, function, script file,
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and
+try again.
+At line:1 char:1
++ .\Education\Python\
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\Education\Python\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\> cd Education
+PS D:\Education> .\Python\
+.\Python\ : The term '.\Python\' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ .\Python\
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\Python\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Education> cd '.\Python\Tutorial\Virtual Environment\'
+PS D:\Education\Python\Tutorial\Virtual Environment> set-executionpoicy remotesigned
+set-executionpoicy : The term 'set-executionpoicy' is not recognized as the name of a cmdlet, function, script file,
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and
+try again.
+At line:1 char:1
++ set-executionpoicy remotesigned
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (set-executionpoicy:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\Education\Python\Tutorial\Virtual Environment> set-executionpolicy remotesigned
+
+Execution Policy Change
+The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
+you to the security risks described in the about_Execution_Policies help topic at
+http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): y
+PS D:\Education\Python\Tutorial\Virtual Environment> set-executionpolicy remotesigned
+
+Execution Policy Change
+The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose
+you to the security risks described in the about_Execution_Policies help topic at
+http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
+PS D:\Education\Python\Tutorial\Virtual Environment>
+
