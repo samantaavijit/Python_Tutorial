@@ -35,15 +35,12 @@ while True:
     query = input("  ").lower()
 
     if query == 'p':
-
         # Pausing the music
         pygame.mixer.music.pause()
     elif query == 'r':
-
         # Resuming the music
         pygame.mixer.music.unpause()
     elif query == 'e':
-
         # Stop the mixer
         pygame.mixer.music.stop()
         break

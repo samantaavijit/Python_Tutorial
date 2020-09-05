@@ -19,7 +19,7 @@ class Employee:
         # params = string.split("-")
         # print(params)
         # return cls(params[0], params[1], params[2]) # it set constructor value from one string
-        return cls(*string.split("-"))  # it set constructor value from one string
+        return cls(*string.split("-"))  # it set constructor value from one string in one line
 
     @staticmethod
     def show_good(string):
