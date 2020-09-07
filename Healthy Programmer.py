@@ -2,45 +2,55 @@
 
 """
 9am to 5pm
-Water - water.mp3  (3.5 litres) - "Drank" - log
+Water - water.mp3 - every 40 minutes - (3.5 litres) - "Drank" - log
 Eyes - eyes.mp3  - every 30 minutes - "EyDone" - log
 Physical activity - physical.mp3  - every 45 minutes - "ExDone" - log
 """
 
+from pygame import mixer
+from datetime import datetime
+from time import time
 
-import pygame
 
-# # Starting the mixer
-# mixer.init()
-#
-# # Loading the song
-# mixer.music.load("song.mp3")
-#
-# # Setting the volume
-# mixer.music.set_volume(0.7)
-#
-# # Start playing the song
-# mixer.music.play()
+def playMusic(file, lopper):
+    mixer.init()
+    mixer.music.load(file)
+    mixer.music.play(-1)
+    while True:
+        a = input()
+        if a.lower() == lopper:
+            mixer.music.stop()
+            break
 
-pygame.mixer.init()
-pygame.mixer.music.load("song.mp3")
-pygame.mixer.music.set_volume(0.05)
-pygame.mixer.music.play()
 
-# infinite loop
-while True:
+def log_now(msg):
+    with open("myLogs.txt", "a") as f:
+        f.write(f"{msg} {datetime.now()}\n")
 
-    print("Press 'p' to pause, 'r' to resume")
-    print("Press 'e' to exit the program")
-    query = input("  ").lower()
 
-    if query == 'p':
-        # Pausing the music
-        pygame.mixer.music.pause()
-    elif query == 'r':
-        # Resuming the music
-        pygame.mixer.music.unpause()
-    elif query == 'e':
-        # Stop the mixer
-        pygame.mixer.music.stop()
-        break
+if __name__ == '__main__':
+    init_water = time()
+    init_eyes = time()
+    init_exercise = time()
+    waterSec = 40 * 60
+    eyesSec = 30 * 60
+    exerciseSec = 45 * 60
+
+    while True:
+        if (time() - init_water) > waterSec:
+            print("Water drinking time. Enter 'water' to stop the alarm")
+            playMusic("water.mp3", "water")
+            init_water = time()
+            log_now("Drank water at")
+
+        if (time() - init_eyes) > eyesSec:
+            print("Eye exercise time. Enter 'eye' to stop the alarm")
+            playMusic("eye.mp3", "eye")
+            init_eyes = time()
+            log_now("Eyes Relaxed at")
+
+        if (time() - init_exercise) > exerciseSec:
+            print("Physical activity time. Enter 'phy' to stop the alarm")
+            playMusic("eye.mp3", "phy")
+            init_exercise = time()
+            log_now("Physical activity done at")
