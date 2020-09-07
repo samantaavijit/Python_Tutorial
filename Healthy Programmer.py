@@ -51,6 +51,6 @@ if __name__ == '__main__':
 
         if (time() - init_exercise) > exerciseSec:
             print("Physical activity time. Enter 'phy' to stop the alarm")
-            playMusic("eye.mp3", "phy")
+            playMusic("exercise.mp3", "phy")
             init_exercise = time()
             log_now("Physical activity done at")
