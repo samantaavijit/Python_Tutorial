@@ -86,7 +86,7 @@ def writeFile(fileName, value):
 def init():
     global count
     print("------------Health Management System--------------")
-    print("1 For lock the value\n2 For display")
+    print("1 For loc the value\n2 For display")
     val = int(input("Enter your choice "))
     print("1 For Avijit\n2 For Antik\n3 for Bibetro")
     name = int(input("Enter your choice "))
@@ -107,5 +107,6 @@ def init():
         count = False
 
 
-while count:
-    init()
+if __name__ == '__main__':
+    while count:
+        init()

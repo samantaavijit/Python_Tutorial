@@ -1,7 +1,6 @@
 # Healthy Programmer
 
 """
-9am to 5pm
 Water - water.mp3 - every 40 minutes - (3.5 litres) - "Drank" - log
 Eyes - eyes.mp3  - every 30 minutes - "EyDone" - log
 Physical activity - physical.mp3  - every 45 minutes - "ExDone" - log
