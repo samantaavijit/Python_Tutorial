@@ -8,7 +8,7 @@ as input from the user and then return the result
 """
 
 nSet = {"45*3": 555, "56+9": 77, "56/6": 4}
-while (True):
+while True:
     a = int(input("Enter the 1st number "))
     b = int(input("Enter the 2nd number "))
     print("+ for Addition\n- for Subtraction\n* for Multiplication\n/ for Division")

@@ -14,7 +14,7 @@ from time import time
 def playMusic(file, lopper):
     mixer.init()
     mixer.music.load(file)
-    mixer.music.play(-1)
+    mixer.music.play(-1)  # repeatedly play
     while True:
         a = input()
         if a.lower() == lopper:
@@ -31,9 +31,9 @@ if __name__ == '__main__':
     init_water = time()
     init_eyes = time()
     init_exercise = time()
-    waterSec = 40 * 60
+    waterSec = 45 * 60
     eyesSec = 30 * 60
-    exerciseSec = 45 * 60
+    exerciseSec = 60 * 60
 
     while True:
         if (time() - init_water) > waterSec:

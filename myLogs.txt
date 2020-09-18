@@ -83,3 +83,36 @@ Physical activity done at 2020-09-14 08:33:29.729557
 Eyes Relaxed at 2020-09-14 08:56:34.408065
 Drank water at 2020-09-14 09:08:34.838624
 Physical activity done at 2020-09-14 09:18:34.886485
+Eyes Relaxed at 2020-09-14 09:50:06.867187
+Drank water at 2020-09-14 10:00:04.777351
+Physical activity done at 2020-09-14 10:05:06.544079
+Eyes Relaxed at 2020-09-14 10:32:19.345102
+Drank water at 2020-09-14 10:40:11.260920
+Physical activity done at 2020-09-14 10:50:13.460747
+Eyes Relaxed at 2020-09-14 11:03:14.002855
+Drank water at 2020-09-14 11:20:18.060912
+Eyes Relaxed at 2020-09-14 11:35:58.688412
+Physical activity done at 2020-09-14 11:36:02.937002
+Drank water at 2020-09-14 12:00:31.056281
+Eyes Relaxed at 2020-09-14 12:06:06.739511
+Eyes Relaxed at 2020-09-14 13:31:44.324583
+Physical activity done at 2020-09-14 13:31:47.135773
+Drank water at 2020-09-14 13:31:49.519074
+Eyes Relaxed at 2020-09-15 08:39:03.438319
+Drank water at 2020-09-15 08:49:07.981146
+Physical activity done at 2020-09-15 09:05:33.681564
+Eyes Relaxed at 2020-09-15 09:09:14.065693
+Eyes Relaxed at 2020-09-16 08:42:41.021096
+Drank water at 2020-09-16 08:49:41.999839
+Physical activity done at 2020-09-16 08:54:40.990830
+Eyes Relaxed at 2020-09-16 09:12:48.036792
+Drank water at 2020-09-16 09:29:50.330908
+Physical activity done at 2020-09-16 09:39:50.386785
+Eyes Relaxed at 2020-09-17 08:34:20.784277
+Drank water at 2020-09-17 08:41:43.075946
+Physical activity done at 2020-09-17 08:56:51.857346
+Eyes Relaxed at 2020-09-17 09:08:44.247502
+Drank water at 2020-09-17 09:26:48.981598
+Eyes Relaxed at 2020-09-17 10:15:29.106387
+Physical activity done at 2020-09-17 10:15:32.545369
+Drank water at 2020-09-17 10:15:35.121143
