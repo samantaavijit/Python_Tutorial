@@ -122,3 +122,5 @@ Physical activity done at 2020-09-18 20:10:41.250729
 Eyes Relaxed at 2020-09-18 20:21:50.290071
 Drank water at 2020-09-18 20:40:50.727678
 Eyes Relaxed at 2020-09-19 08:07:08.915778
+Drank water at 2020-09-19 08:19:47.149324
+Physical activity done at 2020-09-19 08:34:25.964206
